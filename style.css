@@ -2,11 +2,17 @@
   --prim-color: #9356DC;
   --second-color: #FF79DA;
   --ter-color: #99E2D0;
+  --box-shadow: 0px 0px 5px 1px rgba(209, 209, 209, 0.5);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 body {
@@ -16,7 +22,7 @@ body {
 /* Header */
 
 header {
-  box-shadow: 0px 0px 4px rgb(0, 0, 0,.5);
+  box-shadow: var(--box-shadow);
   position: relative;
   z-index: 1;
 }
@@ -117,7 +123,7 @@ header {
   margin: 35px;
   width: 90%;
   border: none;
-  box-shadow: 0px 0px 4px rgb(0, 0, 0,.5);
+  box-shadow: var(--box-shadow);
 }
 
 .blocFonc h3 {
@@ -144,6 +150,7 @@ header {
 
 .restaurants {
   background-color: rgb(243, 241, 241);
+  padding-bottom: 50px;
 }
 
 .restaurants h2 {
@@ -179,10 +186,11 @@ header {
   border-radius: 5px;
 }
 
-img {
+.cardResto img {
   width: 100%;
   max-height: 210px;
   border-radius: 15px 15px 0 0;
+  object-fit: cover;
 }
 
 .info {
@@ -193,6 +201,8 @@ img {
 .coeurResto {
   font-size: 30px;
 }
+
+/* Footer */
 
 footer {
   height: 100%;
@@ -224,6 +234,100 @@ footer nav {
 .fa-hands-helping:before {
   margin-right: 10px;
 }
+
+
+/* LES DIFFÉRENTS MENUS */
+
+.bodyMenu {
+  background-color: #f8f6f6;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 20px;
+}
+
+.logo img {
+  margin: 0 60px;
+}
+
+.menu {
+  background-color: #f8f6f6;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -50px;
+  padding: 20px;
+  height: 100%;
+}
+
+.menu h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'shrikhand';
+  margin-bottom: 20px;
+}
+
+.imgMenu {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.commande {
+  text-align: center;
+}
+.menu button {
+  background: linear-gradient(var(--second-color), var(--prim-color));
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  border: none;
+  color: white;
+  min-width: 250px;
+}
+
+/* Entrées, plats et desserts*/
+
+.entrees > h3, .plats > h3, .desserts > h3 {
+  font-weight: normal;
+}
+
+.entrees > h3::after, .plats > h3::after, .desserts > h3::after {
+    content: ""; 
+    display: block;
+    max-width: 45px;
+    padding-top: 5px;
+    border-bottom: 4px solid var(--ter-color);
+}
+
+.blocEnt {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocs {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.bloc {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+
 
 
 
