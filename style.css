@@ -324,35 +324,57 @@ footer nav {
   background-color: white;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.bloc:hover .prixAnim {
+  left: -50px;
+  transition: 330ms ease-in-out;
 }
 
 .infoPlat {
+  margin: 10px;
+  margin-right: 0px;
+  width: 100%;
   overflow: hidden;
+}
+
+.infoPlat h3, .infoPlat p {
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 5px;
 }
 
 .prixAnim {
   display: flex;
-  overflow: hidden;
-  height: 100%;
+  position: relative;
+  left: 60px;
+  max-width: 100px;
 }
 
 .prixAnim span {
+  display: inline-block;
   align-self: flex-end;
+  margin-bottom: 11px;
+  margin-right: 30px;
+  font-weight: 600;
 }
 
 .prixAnim i {
-  position: relative;
+  display: flex;
   align-self: flex-end;
-  right: 0px;
+  justify-content: center;
   font-size: 30px;
   color: white;
   background-color: var(--ter-color);
-  height: 50px;
-  min-width: 60px;
+  height: 74px;
+  min-width: 100px;
   border-radius: 0 20px 20px 0px;
 }
 
+.fa-check-circle:before {
+  align-self: center;
+}
 
 /*# sourceMappingURL=style.css.map */
