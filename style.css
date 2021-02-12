@@ -327,15 +327,14 @@ footer nav {
   overflow: hidden;
 }
 
-.bloc:hover .prixAnim {
-  left: -50px;
-  transition: 330ms ease-in-out;
+.bloc:hover .checkAnim {
+  width: 30%;
 }
 
 .infoPlat {
   margin: 10px;
   margin-right: 0px;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
 }
 
@@ -348,28 +347,27 @@ footer nav {
 
 .prixAnim {
   display: flex;
-  position: relative;
-  left: 60px;
-  max-width: 100px;
+  margin-right: 10px;
 }
 
 .prixAnim span {
   display: inline-block;
   align-self: flex-end;
   margin-bottom: 11px;
-  margin-right: 30px;
   font-weight: 600;
 }
 
-.prixAnim i {
+.checkAnim {
   display: flex;
-  align-self: flex-end;
   justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 250ms;
+  width: 0;
   font-size: 30px;
   color: white;
   background-color: var(--ter-color);
   height: 74px;
-  min-width: 100px;
   border-radius: 0 20px 20px 0px;
 }
 
