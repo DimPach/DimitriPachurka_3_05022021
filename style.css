@@ -331,6 +331,15 @@ footer nav {
   width: 30%;
 }
 
+.bloc:hover .checkAnim i {
+  transform: rotate(1turn);
+  transition: 400ms ease-in-out;
+}
+
+.checkAnim i {
+  transform: rotate(0turn);
+}
+
 .infoPlat {
   margin: 10px;
   margin-right: 0px;
