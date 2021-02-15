@@ -45,14 +45,10 @@ header {
 
 .zone {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
   height: 60px;
   background-color: #e6e3e3;
   position: relative;
-}
-
-.zoneRech {
-  margin-left: 35%;
 }
 
 .zone i {
@@ -147,6 +143,30 @@ header {
 }
 
 /* Restaurants */
+.coeurResto {
+  position: relative;
+  font-size: 30px;
+  height: 32px;
+}
+
+.coeurResto:hover .heartBg {
+  opacity: 1;
+  transition: 2s;
+}
+
+.coeurResto:hover .heart {
+  opacity: 0;
+  transition: 1s;
+}
+
+.heartBg {
+  position: absolute;
+  opacity: 0;
+  font-size:32px;
+  top: 2px;
+  right: -1px;
+  color: var(--prim-color);
+}
 
 .restaurants {
   background-color: rgb(243, 241, 241);
@@ -196,10 +216,6 @@ header {
 .info {
   display: flex;
   justify-content: space-between;
-}
-
-.coeurResto {
-  font-size: 30px;
 }
 
 /* Footer */
@@ -265,10 +281,12 @@ footer nav {
   height: 100%;
 }
 
-.menu h1 {
+.titreMenu {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+.menu h1 {
+  align-items: center;
   font-family: 'shrikhand';
   margin-bottom: 20px;
 }
@@ -325,7 +343,27 @@ footer nav {
   border-radius: 20px;
   box-shadow: var(--box-shadow);
   overflow: hidden;
+  animation: fadein 2s ease-in-out;
+  animation-fill-mode: backwards;
 }
+
+.bloc1 {
+  animation-delay: 0s;
+}
+
+.bloc2 {
+  animation-delay: 0.28s;
+}
+
+.bloc3 {
+  animation-delay: 0.56s;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; transform: translate(0, 10px); }
+    100% { opacity: 1; transform: translate(0, 0);}
+}
+
 
 .bloc:hover .checkAnim {
   width: 30%;
