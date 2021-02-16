@@ -1,0 +1,47 @@
+@media screen and (min-width: 1024px) {
+    .logo img {
+        width: 20%;
+      }
+
+    .accrocheText button {
+        width: 20%;
+    }
+
+    .blocsFonc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .blocFonc {
+        width: 30%;
+    }
+    
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+    .cardResto {
+        width: 45%;
+      }
+
+    .carteMenu {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .entrees, .plats, .desserts {
+        width: 30%;
+    }
+
+    .titreMenu {
+        justify-content: center;
+    }
+
+    .titreMenu h1 {
+        margin-right: 20px;
+    }
+}

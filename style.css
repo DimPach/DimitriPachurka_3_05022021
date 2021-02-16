@@ -95,7 +95,8 @@ header {
 }
 
 .logo {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -247,7 +248,7 @@ header {
 .restaurants h2 {
   margin: 20px;
   margin-bottom: 0; /* améliorer les margin avec une valeur*/
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .cards {
@@ -257,6 +258,7 @@ header {
 }
 
 .cardResto {
+  position: relative;
   width: 90%;
   margin: 20px;
   background-color: white;
@@ -269,7 +271,7 @@ header {
 
 .cardResto span {
   position: absolute;
-  right: 10%;
+  right: 5%;
   margin-top: 20px;
   background-color: var(--ter-color);
   padding: 7px;
@@ -329,11 +331,6 @@ footer nav {
   background-color: #f8f6f6;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .logo i {
   font-size: 20px;
