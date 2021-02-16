@@ -32,7 +32,7 @@ body {
   animation-fill-mode: forwards;
 }
 .loadingBall div {
-  margin-top: 50%;
+  margin-top: 50vh;
   width: 30px;
   height: 30px; 
   display: inline-block;
