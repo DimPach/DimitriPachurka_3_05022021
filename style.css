@@ -91,13 +91,10 @@ body {
   }
 }
 
-header {
-  box-shadow: var(--box-shadow);
-}
-
 .logo {
   display: flex;
   justify-content: center;
+  box-shadow: var(--box-shadow);
   padding: 20px;
 }
 
@@ -194,6 +191,7 @@ header {
   width: 75%;
   border: none;
   box-shadow: var(--box-shadow);
+  white-space: nowrap;
 }
 
 .blocFonc p {
